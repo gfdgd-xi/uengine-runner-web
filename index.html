@@ -1,0 +1,160 @@
+<meta charset="UTF-8">
+
+<head>
+    <title>uengine 运行器 1.4.0 发布</title>
+</head>
+
+<body>
+    <div id="Title">
+        <div style="height: 10%;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <h1 class="TitleLabel">uengine 运行器 1.4.0 发布</h1>
+        <p align="center">
+            <button class="TitleDownloadButton" onclick="Download(0);">下载（蓝奏云）（密码：2rh3）</button>
+            <button class="TitleDownloadButton" onclick="Download(1);">下载（Gitee）</button>
+            <button class="TitleDownloadButton" onclick="Download(2);">下载（Github）</button>
+        </p>
+        <div style="height: 10%;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div id="Left">
+        <div id="About">
+            <h1 align="center">介绍</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新版本Deepin/UOS发布后，可以在应用商店安装部分官方已适配的安卓应用，对爱好者来说，不能自己安装APK软件包始终差点意思，本程序可以为Deepin/UOS上的Uengine安卓运行环境安装自定义APK软件包，并能发送安装的APK包启动菜单到桌面或系统菜单。
+            </p>
+        </div>
+        <div id="Update">
+            <h1 align="center">更新内容</h1>
+            <b>
+                <p>※1、添加新版打包方式（deepin打包方式）;</p>
+                <p>※2、支持测试运行/创建/删除uengine图标;</p>
+                <p>※3、支持提取安装的apk;</p>
+                <p>※4、支持打包deb包;</p>
+            </b>
+            <p>5、修改菜单栏布局;</p>
+            <p>6、支持打开uengine数据目录和用户数据目录;</p>
+            <p>7、程序信息保存到json,非直接写入程序本体;</p>
+            <p>8、更多命令操作;</p>
+        </div>
+    </div>
+    <div id="ShowPicture">
+        <img width="98%" src="https://storage.deepin.org/thread/202108191410327464_截图_选择区域_20210819140938.png"
+            alt="1.4.0 截图">
+        <img width="98%"
+            src="https://storage.deepin.org/thread/202108191615145204_%E6%88%AA%E5%9B%BE_tk2_20210819161315.png"
+            alt="打包器">
+    </div>
+    <div id="Wiki">
+        <h1 align="center">程序&nbsp;Wiki&nbsp;&nbsp;<button class="BodyOpenNewUrlButton"
+                onclick="window.open('https://gitee.com/gfdgd-xi/uengine-runner/wikis/pages');">新标签页打开</button></h1>
+        <iframe width="100%" style="border-color: green;" height="100%"
+            src="https://gitee.com/gfdgd-xi/uengine-runner/wikis/pages"></iframe>
+    </div>
+    <div id="DownloadNumber">
+        <h1 align="center">程序下载量&nbsp;&nbsp;<button class="BodyOpenNewUrlButton"
+                onclick="window.open('https://kdocs.cn/l/smrvazWGuKcY');">新标签页打开</button></h1>
+        <iframe width="100%" style="border-color: green;" height="100%" src="https://kdocs.cn/l/smrvazWGuKcY"></iframe>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #Title {
+        width: 100%;
+        /*height: 30%;*/
+        background-image: linear-gradient(to bottom, green, rgb(77, 248, 77));
+    }
+
+    .TitleLabel {
+        margin: 0;
+        padding: 0;
+        font-size: 50;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .TitleDownloadButton {
+        background-color: transparent;
+        color: whitesmoke;
+        font-size: larger;
+        border-style: solid;
+        border-radius: 5px;
+    }
+
+    #About {
+        width: 99%;
+        text-align: center;
+        /*float: left;*/
+        border-style: dotted;
+        border-color: green;
+    }
+
+    #Left {
+        float: left;
+        width: 49%;
+    }
+
+    #ShowPicture {
+        width: 49%;
+        float: left;
+        border-style: dotted;
+        border-color: green;
+    }
+
+    #Update {
+        border-style: dotted;
+        width: 99%;
+        border-color: green;
+    }
+
+    #Wiki {
+        width: 99%;
+        border-style: dotted;
+        float: left;
+        border-color: green;
+    }
+
+    .BodyOpenNewUrlButton {
+        color: green;
+        background-color: transparent;
+        border-style: solid;
+        border-color: green;
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    #DownloadNumber {
+        width: 99%;
+        border-style: dotted;
+        float: left;
+        border-color: green;
+    }
+</style>
+<script>
+    GiteeDownload = "https://gitee.com/gfdgd-xi/uengine-runner/releases/1.4.0";
+    LanZouYunDownload = "https://gfdgdxi.lanzoui.com/b01oaxnbi";
+    GithubDownload = "https://github.com/gfdgd-xi/uengine-runner/releases/1.4.0";
+    /*
+        1 代表蓝奏云
+        2 代表 gitee
+        3 打包 github
+    */
+    function Download(type) {
+        switch (type) {
+            case 0:
+                window.open(LanZouYunDownload);
+                break;
+            case 1:
+                window.open(GiteeDownload);
+                break;
+            case 2:
+                window.open(GithubDownload);
+                break;
+        }
+    }
+</script>
