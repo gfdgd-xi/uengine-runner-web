@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 
 <head>
-    <title>uengine 运行器 1.4.0 发布</title>
+    <title>uengine 运行器 1.5.1 发布</title>
 </head>
 
 <body>
@@ -9,7 +9,7 @@
         <div style="height: 10%;">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-        <h1 class="TitleLabel">uengine 运行器 1.4.0 发布</h1>
+        <h1 class="TitleLabel">uengine 运行器 1.5.1 发布</h1>
         <p align="center">
             <button class="TitleDownloadButton" onclick="Download(0);">下载（蓝奏云）（密码：2rh3）</button>
             <button class="TitleDownloadButton" onclick="Download(1);">下载（Gitee）</button>
@@ -28,34 +28,22 @@
         <div id="Update">
             <h1 align="center">更新内容</h1>
             <b>
-                <p>※1、添加新版打包方式（deepin打包方式）;</p>
-                <p>※2、支持测试运行/创建/删除uengine图标;</p>
-                <p>※3、支持提取安装的apk;</p>
-                <p>※4、支持打包deb包;</p>
+                <p><b>※1、精简用户界面，合并安装和卸载输入框和浏览按钮等</b></p>
+                <p><b> ※2、修复安装以其的程序图标无法点击进入的问题（deepin 社区版不存在此问题）</b></p>
+                <p><b>※3、支持在程序本体反馈问题</b></p>
+                <p>4、修复了菜单栏的部分显示问题</p>
+                <p>5、支持显示 apk 的部分信息</p>
+                <p>6、支持删除 UEngine 程序运行检查以及重新安装 UEngine 的功能</p>
+                <p>7、自带有跳过家庭版必须有指定包名才能运行程序限制的脚本</p>
+                <p>8、补回依赖包“adb”</p>
             </b>
-            <p>5、修改菜单栏布局;</p>
-            <p>6、支持打开uengine数据目录和用户数据目录;</p>
-            <p>7、程序信息保存到json,非直接写入程序本体;</p>
-            <p>8、更多命令操作;</p>
+            <p>2、修复在英语状态下启动器图标名称异常的问题;</p>
         </div>
     </div>
     <div id="ShowPicture">
-        <img width="98%" src="https://storage.deepin.org/thread/202108191410327464_截图_选择区域_20210819140938.png"
-            alt="1.4.0 截图">
         <img width="98%"
-            src="https://storage.deepin.org/thread/202108191615145204_%E6%88%AA%E5%9B%BE_tk2_20210819161315.png"
-            alt="打包器">
-    </div>
-    <div id="Wiki">
-        <h1 align="center">程序&nbsp;Wiki&nbsp;&nbsp;<button class="BodyOpenNewUrlButton"
-                onclick="window.open('https://gitee.com/gfdgd-xi/uengine-runner/wikis/pages');">新标签页打开</button></h1>
-        <iframe width="100%" style="border-color: green;" height="100%"
-            src="https://gitee.com/gfdgd-xi/uengine-runner/wikis/pages"></iframe>
-    </div>
-    <div id="DownloadNumber">
-        <h1 align="center">程序下载量&nbsp;&nbsp;<button class="BodyOpenNewUrlButton"
-                onclick="window.open('https://kdocs.cn/l/smrvazWGuKcY');">新标签页打开</button></h1>
-        <iframe width="100%" style="border-color: green;" height="100%" src="https://kdocs.cn/l/smrvazWGuKcY"></iframe>
+            src="https://camo.githubusercontent.com/1f7d1760abfc92022f3a26a53b94ec95ddb1b87ab2e7e7ee0bafc3619f28d482/68747470733a2f2f73746f726167652e64656570696e2e6f72672f7468726561642f3230323131303035313832313037363833365f2545362538382541412545352539422542455f6464652d6465736b746f705f32303231313030353138323032312e706e67"
+            alt="1.5.1 截图">
     </div>
 </body>
 <style>
@@ -136,9 +124,9 @@
     }
 </style>
 <script>
-    GiteeDownload = "https://gitee.com/gfdgd-xi/uengine-runner/releases/1.4.0";
+    GiteeDownload = "https://gitee.com/gfdgd-xi/uengine-runner/releases/1.5.0";
     LanZouYunDownload = "https://gfdgdxi.lanzoui.com/b01oaxnbi";
-    GithubDownload = "https://github.com/gfdgd-xi/uengine-runner/releases/1.4.0";
+    GithubDownload = "https://github.com/gfdgd-xi/uengine-runner/releases/1.5.0";
     /*
         1 代表蓝奏云
         2 代表 gitee
